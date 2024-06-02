@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom classes using @apply */
+.knowledge-text {
+  @apply text-lg sm:text-xl mb-2 font-semibold text-gray-600;
+}
+
+.post-meta {
+  @apply text-xs text-gray-500;
+}
+
+.status-locked {
+  @apply text-red-500 font-bold;
+}
+
+.status-unlocked {
+  @apply text-green-500 font-bold;
+}
+
+.btn-parent {
+  @apply mt-4 flex space-x-2;
+}
+
+.btn {
+  @apply px-4 py-2 text-white rounded-md;
+}
+
+.btn-unlock {
+  @apply bg-[#028391] hover:bg-[#34959f];
+}
+
+.btn-delete {
+  @apply bg-red-500 hover:bg-red-600;
+}

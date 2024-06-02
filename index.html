@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knock: Knowledge Unlock</title>
+    <link rel="stylesheet" href="public/css/output.css" />
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <div class="container w-full lg:w-[70%] mx-auto pb-4 pt-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-center mb-2 text-gray-800">Kno<span class="text-[#028391]">ck.</span></h1>
+      <p class="text-center mb-6 sm:mb-8 text-sm text-gray-500">Unlock your knowledge</p>
+
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8">
+        <div class="flex flex-col sm:flex-row">
+          <input type="text" id="knowledgeInput" class="flex-grow p-2 mb-4 sm:mb-0 sm:mr-4 border border-gray-300 rounded-md" placeholder="Enter the knowledge you want to master " />
+          <button class="px-4 py-2 bg-[#028391] text-white rounded-md hover:bg-[#34959f]" onclick="postKnowledge()">Post</button>
+        </div>
+        <p class="text-center text-xs text-gray-600 my-3">Don't know how to use? <a href="public/html/about.html" class="text-sky-500 underline">click here</a></p>
+      </div>
+
+      <div id="postsContainer" class="space-y-4">
+        <!-- Posts will be added here dynamically -->
+      </div>
+    </div>
+
+    <script src="public/js/script.js"></script>
+    <script src="public/js/dateformat.js"></script>
+    <script src="public/js/storage.js"></script>
+  </body>
+</html>
